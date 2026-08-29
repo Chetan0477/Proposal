@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Love ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fff7fa;
+    color: #40232d;
+    overflow-x: hidden;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+
+    background:
+        radial-gradient(circle at 50% 20%,
+        #ffffff,
+        #ffe9f0 48%,
+        #ffd4df);
+}
+
+.card {
+    max-width: 720px;
+    width: 100%;
+
+    padding: 32px 22px;
+
+    border-radius: 32px;
+
+    background: rgba(255,255,255,0.80);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 25px 70px rgba(122,42,70,0.18);
+
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+.kicker {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #a44a68;
+}
+
+h1 {
+    font-size: clamp(44px, 10vw, 78px);
+    line-height: 0.95;
+    margin: 15px 0;
+
+    color: #8f3155;
+}
+
+.sub {
+    font-size: 19px;
+    line-height: 1.6;
+
+    max-width: 580px;
+
+    margin: 18px auto;
+}
+
+.photo {
+    width: min(100%, 500px);
+
+    aspect-ratio: 1;
+
+    object-fit: cover;
+
+    border-radius: 26px;
+
+    display: block;
+
+    margin: 15px auto 25px;
+
+    box-shadow:
+        0 16px 45px rgba(89,27,48,0.22);
+}
+
+/* BUTTONS */
+
+.btn {
+    border: none;
+
+    border-radius: 999px;
+
+    padding: 15px 24px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    margin: 7px;
+
+    transition: 0.2s;
+}
+
+.yes {
+    background: #a8325c;
+
+    color: white;
+
+    box-shadow:
+        0 9px 20px rgba(168,50,92,0.25);
+}
+
+.yes:hover {
+    transform: translateY(-2px) scale(1.03);
+}
+
+.no {
+    background: white;
+
+    color: #8f3155;
+
+    border: 1px solid #e7b4c5;
+
+    position: relative;
+}
+
+/* STORY */
+
+.section {
+    padding: 85px 22px;
+
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 38px;
+
+    color: #8f3155;
+}
+
+.timeline {
+    max-width: 800px;
+
+    margin: auto;
+
+    display: grid;
+
+    gap: 18px;
+}
+
+.note {
+    background: white;
+
+    border-radius: 22px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 12px 35px rgba(89,27,48,0.09);
+
+    text-align: left;
+
+    line-height: 1.6;
+}
+
+.note strong {
+    color: #a8325c;
+}
+
+/* PROPOSAL */
+
+.proposal {
+    min-height: 85vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            #fff7fa,
+            #ffe2eb
+        );
+}
+
+.big {
+    font-size: clamp(36px, 8vw, 68px);
+
+    margin: 10px 0;
+
+    color: #8f3155;
+}
+
+#answer {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #a8325c;
+
+    min-height: 35px;
+
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 35px;
+
+    text-align: center;
+
+    color: #9b6476;
+
+    font-size: 14px;
+}
+
+/* FLOATING HEARTS */
+
+.heart {
+    position: fixed;
+
+    bottom: -30px;
+
+    font-size: 24px;
+
+    pointer-events: none;
+
+    animation:
+        float 5s linear forwards;
+
+    z-index: 20;
+}
+
+@keyframes float {
+
+    to {
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+
+}
+
+/* SPARKLES */
+
+.spark {
+    position: fixed;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #d75a82;
+
+    pointer-events: none;
+
+    z-index: 30;
+
+    animation:
+        burst 1.1s ease-out forwards;
+}
+
+@keyframes burst {
+
+    to {
+        transform:
+            translate(
+                var(--x),
+                var(--y)
+            );
+
+        opacity: 0;
+    }
+
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ========================= -->
+<!-- HERO SECTION -->
+<!-- ========================= -->
+
+<section class="hero">
+
+<div class="card">
+
+<div class="kicker">
+A little something for you
+</div>
+
+
+<h1>
+Hey, my love ❤️
+</h1>
+
+
+<p class="sub">
+
+Distance may keep us in different places,
+but somehow you still feel like my favourite
+place to be.
+
+</p>
+
+
+<!-- YOUR COUPLE IMAGE -->
+
+<img
+class="photo"
+src="YOUR_IMAGE_URL_HERE"
+alt="Us together"
+>
+
+
+<p class="sub">
+
+So I made this tiny corner of the internet…
+just for one very important question.
+
+</p>
+
+
+<button
+class="btn yes"
+onclick="openProposal()">
+
+Open my heart 💌
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- OUR STORY -->
+<!-- ========================= -->
+
+<section class="section">
+
+<h2>
+Our little story ✨
+</h2>
+
+
+<div class="timeline">
+
+
+<div class="note">
+
+<strong>
+Then…
+</strong>
+
+<br>
+
+Two people,
+two places,
+and a connection that somehow
+became bigger than the distance.
+
+</div>
+
+
+
+<div class="note">
+
+<strong>
+Now…
+</strong>
+
+<br>
+
+Every call,
+every message,
+every silly moment —
+all of it means more
+because it's us.
+
+</div>
+
+
+
+<div class="note">
+
+<strong>
+Someday…
+</strong>
+
+<br>
+
+No screens.
+No distance.
+
+Just us,
+side by side,
+making all those
+"someday" moments real. ❤️
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- PROPOSAL -->
+<!-- ========================= -->
+
+<section
+class="proposal"
+id="proposal">
+
+<div class="card">
+
+
+<div class="kicker">
+One question
+</div>
+
+
+<div class="big">
+
+Will you keep choosing me? 💗
+
+</div>
+
+
+<p class="sub">
+
+Not just today.
+
+Not just when we're close.
+
+Through the distance,
+the chaos,
+the laughter,
+the boring days
+and all the beautiful ones.
+
+</p>
+
+
+<button
+class="btn yes"
+onclick="sayYes()">
+
+YES, ALWAYS 💖
+
+</button>
+
+
+<button
+class="btn no"
+id="noBtn"
+onmouseover="moveNo()"
+onclick="moveNo()">
+
+Hmm… let me think 😌
+
+</button>
+
+
+<div id="answer"></div>
+
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+Made with a ridiculous amount of love,
+just for you. ♡
+
+</footer>
+
+
+
+<script>
+
+/* OPEN PROPOSAL */
+
+function openProposal() {
+
+    document
+    .getElementById("proposal")
+    .scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+
+
+/* YES BUTTON */
+
+function sayYes() {
+
+    document
+    .getElementById("answer")
+    .innerHTML =
+    "You just made my whole world smile. ❤️";
+
+
+    /* Hearts */
+
+    for (
+        let i = 0;
+        i < 42;
+        i++
+    ) {
+
+        setTimeout(
+            heart,
+            i * 35
+        );
+
+    }
+
+
+    /* Sparkles */
+
+    for (
+        let i = 0;
+        i < 28;
+        i++
+    ) {
+
+        setTimeout(
+            spark,
+            i * 20
+        );
+
+    }
+
+}
+
+
+
+/* FLOATING HEART */
+
+function heart() {
+
+    let e =
+    document.createElement("div");
+
+    e.className = "heart";
+
+    e.textContent =
+    [
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "✨"
+    ][
+        Math.floor(
+            Math.random() * 5
+        )
+    ];
+
+
+    e.style.left =
+    Math.random() * 100 + "vw";
+
+
+    e.style.animationDuration =
+    (
+        3 +
+        Math.random() * 3
+    ) + "s";
+
+
+    document.body.appendChild(e);
+
+
+    setTimeout(
+        () => e.remove(),
+        6500
+    );
+
+}
+
+
+
+/* SPARKLE EFFECT */
+
+function spark() {
+
+    let e =
+    document.createElement("div");
+
+    e.className = "spark";
+
+
+    e.style.left =
+    "50vw";
+
+    e.style.top =
+    "55vh";
+
+
+    e.style.setProperty(
+        "--x",
+        (Math.random() * 500 - 250) + "px"
+    );
+
+
+    e.style.setProperty(
+        "--y",
+        (Math.random() * 500 - 250) + "px"
+    );
+
+
+    document.body.appendChild(e);
+
+
+    setTimeout(
+        () => e.remove(),
+        1200
+    );
+
+}
+
+
+
+/* PLAYFUL NO BUTTON */
+
+function moveNo() {
+
+    let button =
+    document.getElementById("noBtn");
+
+
+    let x =
+    Math.random() * 180 - 90;
+
+
+    let y =
+    Math.random() * 100 - 50;
+
+
+    button.style.transform =
+    "translate(" +
+    x +
+    "px," +
+    y +
+    "px)";
+
+}
+
+</script>
+
+</body>
+</html>
